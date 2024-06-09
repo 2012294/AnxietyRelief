@@ -211,7 +211,7 @@ public class ChatActivity extends AppCompatActivity {
         URI uri;
         try {
             // Pass therapistId and patientId as query parameters in the WebSocket connection URL
-            uri = new URI("ws://192.168.100.250:8080");
+            uri = new URI("ws://your_IPV4:8080");
         } catch (URISyntaxException e) {
             e.printStackTrace();
             return;
