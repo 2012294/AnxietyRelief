@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Triangle_Breathing_description"
+    android:transitionName="@string/transition_triangle_breathing_card">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewEqualBreathing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/mint_blue_green"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+
+        <!-- Linear layout for the entire content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="Triangle Breathing"
+                android:textColor="@color/pomp_power"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- Scrollable content inside a ScrollView -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <!-- Linear layout for scrollable content -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- First TextView at the center top -->
+
+
+                    <!-- Second TextView below the first one -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="The Triangle Breathing method, or Trikona Pranayama, is a mindful breathing technique. It involves a rhythmic pattern of inhalation, retention, and exhalation in equal measures, promoting balance and calmness. This practice proves beneficial for stress relief, anxiety reduction, and improving sleep quality when incorporated into a pre-bedtime routine. By fostering intentional breath control, Triangle Breathing serves as a valuable tool for enhancing overall well-being."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <!-- Third TextView for "BENEFITS" with an arrow -->
+                    <LinearLayout
+                        android:id="@+id/layoutBenefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewBelow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="BENEFITS"
+                            android:textColor="@color/pomp_power"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <!-- ImageView for the arrow -->
+                        <ImageView
+                            android:id="@+id/arrowBenefits"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                    </LinearLayout>
+
+                    <!-- Content for "BENEFITS" -->
+                    <TextView
+                        android:id="@+id/textBenefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="The Triangle Breathing method, or Trikona Pranayama, presents a range of holistic benefits for mental and physical well-being. This mindful breathing technique, characterized by a rhythmic sequence of inhalation, retention, and exhalation, serves as a potent tool for stress reduction. By activating the body's relaxation response, Triangle Breathing induces a profound sense of calm, making it effective in managing anxiety and promoting emotional regulation. Additionally, its deliberate breath pattern proves beneficial for enhancing sleep quality when practiced before bedtime, relaxing the nervous system and quieting the mind. The method's focus on conscious breath control fosters a heightened mind-body connection, improving concentration, and mental clarity. Regular incorporation of Triangle Breathing into a daily routine offers a practical and accessible means of achieving balanced energy, emotional well-being, and an overall sense of equilibrium."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <!-- Fourth TextView for "METHOD" with an arrow -->
+                    <LinearLayout
+                        android:id="@+id/layoutMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="METHOD"
+                            android:textColor="@color/pomp_power"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <!-- ImageView for the arrow -->
+                        <ImageView
+                            android:id="@+id/arrowMethod"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                    </LinearLayout>
+
+                    <!-- Content for "METHOD" -->
+                    <TextView
+                        android:id="@+id/textMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Find a comfortable seated position with a straight spine. You can sit on the floor or in a chair.\n\nAllow your shoulders to relax, and place your hands on your knees or in your lap.\n\nInhalation should be done through the nose and exhalation through the mouth.\n\nStep 1:\n\nBreathe in through your nose to a count of four.\n\nStep 2:\n\nHold your breath to a count of four.\n\nStep 3:\n\nExhale completely and slowly to a count of four."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="40dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/mint_blue_green"
+                android:id="@+id/beginexercisebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/mint_green"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BEGIN EXERCISE"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/pomp_power"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

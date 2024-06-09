@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewJournalEntry">
+
+
+    <TextView
+        android:id="@+id/dayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- TextView to display the date -->
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/dayText"/>
+
+    <!-- TextView to display the time -->
+
+    <LinearLayout
+        android:id="@+id/Timelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dateText"
+        android:padding="20dp"
+
+        >
+
+        <!-- TextView for date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="created : "
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+
+            />
+
+        <!-- TextView for time -->
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selectedPromptTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Prompt"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/Timelayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/pomp_power"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/JournalEntrycardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedPromptTextView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#CBC3E3"
+        >
+
+        <EditText
+            android:id="@+id/JournalEntrydispaly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your entry here..."
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:gravity="top|start"
+            android:minLines="20"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/edit_text_background"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/JournalEntrycardView"
+        android:layout_margin="20dp"
+        android:text="SaveChanges"
+
+        />
+
+
+</RelativeLayout>

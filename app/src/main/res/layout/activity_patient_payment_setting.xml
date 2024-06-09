@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Patient_payment_setting">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/payment_top_background"
+        android:layout_height="210dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/white"
+            android:layout_margin="10dp"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="7dp"
+            android:text="Payment Settings"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cards"
+                android:layout_weight="2"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/pomp_power"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Cards"
+               android:id="@+id/addcards"
+                android:background="@drawable/underlinepurple"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/pomp_power"
+                />
+        </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                     android:layout_marginTop="15dp"
+                    android:id="@+id/patientcardlist1"
+                   >
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/savebtn"
+        android:layout_width="350dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="save"
+
+        android:textColor="@color/white"
+
+        android:background="@drawable/round_background1"/>
+
+</LinearLayout>

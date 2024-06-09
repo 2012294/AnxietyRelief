@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "127478196248",
+    "project_id": "anxietyrelief-afade",
+    "storage_bucket": "anxietyrelief-afade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127478196248:android:946e926fa9f3377e917b6d",
+        "android_client_info": {
+          "package_name": "com.hareem.anxietyrelief"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg__kTUwIn0FGUbBNAZ0EVg-BzNGWSIIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

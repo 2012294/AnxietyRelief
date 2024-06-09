@@ -1,0 +1,59 @@
+<!-- dialog_filter.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:textColor="@color/pomp_power"
+       android:textSize="16sp"
+       android:layout_height="wrap_content"
+      android:padding="8dp"
+       android:text="Select Charges range"/>
+    <Spinner
+        android:id="@+id/spinnerCharges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/select_charges_range" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/pomp_power"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Select Degree"/>
+    <Spinner
+        android:id="@+id/degreeSpinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/spinner_prompt" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/pomp_power"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Select Availability day"/>
+
+    <Spinner
+        android:id="@+id/daySpinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="8dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/spinner_day"
+        android:entries="@array/days_of_week1" />
+
+
+
+</LinearLayout>

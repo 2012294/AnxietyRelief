@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:id="@+id/dayTextView"
+        android:layout_width="60dp"
+       />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fromTimeTextView"
+        android:padding="10dp"
+         />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/toTimeTextView"
+        android:padding="10dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteIcon"
+        android:src="@drawable/baseline_delete_24"
+        android:padding="10dp" />
+</LinearLayout>

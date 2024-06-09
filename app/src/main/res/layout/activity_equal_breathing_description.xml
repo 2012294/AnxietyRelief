@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Equal_Breathing_description"
+    android:transitionName="@string/transition_equal_breathing_card">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewEqualBreathing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/mint_blue_green"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+
+        <!-- Linear layout for the entire content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="Equal Breathing"
+                android:textColor="@color/pomp_power"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- Scrollable content inside a ScrollView -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <!-- Linear layout for scrollable content -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- First TextView at the center top -->
+
+
+                    <!-- Second TextView below the first one -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Equal Breathing, also known as Sama-Vritti, is a breathing technique originating from pranayama yoga. It involves inhaling and exhaling for the same duration. This practice can be beneficial when you're feeling uneasy, out of balance, or after a tiring day. It is also useful for promoting faster and better sleep if done before bedtime."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <!-- Third TextView for "BENEFITS" with an arrow -->
+                    <LinearLayout
+                        android:id="@+id/layoutBenefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewBelow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="BENEFITS"
+                            android:textColor="@color/pomp_power"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <!-- ImageView for the arrow -->
+                        <ImageView
+                            android:id="@+id/arrowBenefits"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                    </LinearLayout>
+
+                    <!-- Content for "BENEFITS" -->
+                    <TextView
+                        android:id="@+id/textBenefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Equal breathing provides a range of benefits such as stress reduction. The practice also enhances focus and concentration and promotes mindfulness"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <!-- Fourth TextView for "METHOD" with an arrow -->
+                    <LinearLayout
+                        android:id="@+id/layoutMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="METHOD"
+                            android:textColor="@color/pomp_power"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <!-- ImageView for the arrow -->
+                        <ImageView
+                            android:id="@+id/arrowMethod"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                    </LinearLayout>
+
+                    <!-- Content for "METHOD" -->
+                    <TextView
+                        android:id="@+id/textMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Begin by sitting or lying down in a comfortable position.\n\nAll inhalations and exhalations should be made through your nose, which adds a slight, natural resistance to your breath.\n\nStep 1:\n\nBreathe in through your nose to a count of four.\n\nStep 2:\n\nExhale through your nose to a count of four."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="40dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/mint_blue_green"
+                android:id="@+id/beginexercisebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/mint_green"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BEGIN EXERCISE"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/pomp_power"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

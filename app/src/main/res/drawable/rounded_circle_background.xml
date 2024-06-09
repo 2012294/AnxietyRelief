@@ -1,0 +1,13 @@
+<!-- res/drawable/rounded_corner_imageview.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:topRightRadius="25dp"
+                android:bottomRightRadius="25dp"
+            />
+            <solid android:color="@color/mint_green" />    <!-- Change color to your desired color -->
+            <!-- Add other properties like stroke, etc. if needed -->
+        </shape>
+    </item>
+</layer-list>

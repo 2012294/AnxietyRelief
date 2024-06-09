@@ -1,0 +1,77 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/senderMessageBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/sender_message_background"
+        android:padding="12dp">
+
+        <!-- Message TextView -->
+        <TextView
+            android:id="@+id/senderMessageTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="Hello there!"
+            android:textSize="16sp" />
+
+        <!-- Timestamp for sender's message -->
+        <TextView
+            android:id="@+id/senderMessageTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:text="10:00 AM"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="bottom"
+            android:textSize="12sp"
+          />
+    </LinearLayout>
+
+
+    <!-- Receiver's message bubble -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/receiverMessageBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/receiver_message_background"
+        android:padding="12dp">
+
+        <!-- Message TextView -->
+        <TextView
+            android:id="@+id/receiverMessageTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:text="Hi! How are you?"
+            android:textSize="16sp" />
+
+        <!-- Timestamp for receiver's message -->
+        <TextView
+            android:id="@+id/receiverMessageTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:text="10:05 AM"
+            android:textSize="12sp"
+
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+
+</RelativeLayout>

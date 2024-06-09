@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Profile Image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/account_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                app:civ_border_color="@color/pomp_power"
+                app:civ_border_width="2dp"
+                android:src="@drawable/blank_profile_picture_973460"/>
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/textView_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/account_image"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="42dp"
+                android:text="Username"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_username"
+                android:layout_alignStart="@id/textView_username"
+                android:layout_marginTop="8dp"
+                android:text="Email"
+                android:textSize="18sp" />
+
+            <!-- Charge CardView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chargescardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account_image"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp">
+
+                <!-- Charge Info -->
+                <TextView
+                    android:id="@+id/textView_charge_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pomp_power"
+                    android:padding="16dp"
+                    android:text="Charges"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="16dp"
+                    android:text="Charges Info"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Availability CardView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/availabilitycardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chargescardview"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp">
+
+                <!-- Availability Info -->
+                <TextView
+                    android:id="@+id/textView_availability_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pomp_power"
+                    android:padding="16dp"
+                    android:text="Availability Timings"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView_availability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="16dp"
+                    android:text="Availability Info"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/degrees_Qualificationscardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/availabilitycardview"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textView_degrees_qualifications_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Degree/Qualification"
+                        android:textStyle="bold"
+                        />
+
+
+                    <!-- Degrees CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/degreescardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/availabilitycardview"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardCornerRadius="8dp">
+
+                        <!-- Degrees Info -->
+                        <TextView
+                            android:id="@+id/textView_degrees_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/pomp_power"
+                            android:padding="16dp"
+                            android:text="Degrees"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView_degrees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="16dp"
+                            android:padding="16dp"
+                            android:text="Degrees Info"
+                            android:textSize="18sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Certificatescardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/availabilitycardview"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardCornerRadius="8dp">
+
+                        <!-- Certificates Info -->
+                        <TextView
+                            android:id="@+id/textView_Certificates_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/pomp_power"
+                            android:padding="16dp"
+                            android:text="Certificates"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <TableLayout
+
+                            android:id="@+id/selectedfileTable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="45dp"
+                            >
+
+                            <!-- Rows will be dynamically added here -->
+                        </TableLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/bookAppointmentButton"
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/degrees_Qualificationscardview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/french_grey"
+                android:text="Book an appointment" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

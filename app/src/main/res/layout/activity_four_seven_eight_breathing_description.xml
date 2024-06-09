@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".four_seven_eight_Breathing_description"
+    android:transitionName="@string/transition_478_breathing_card">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewEqualBreathing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/mint_blue_green"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+
+        <!-- Linear layout for the entire content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="4-7-8 Breathing"
+                android:textColor="@color/pomp_power"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- Scrollable content inside a ScrollView -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <!-- Linear layout for scrollable content -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- First TextView at the center top -->
+
+
+                    <!-- Second TextView below the first one -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="The 4-7-8 Breathing technique, also known as 'relaxing breath' is a breathing pattern developed by Dr. Andrew Weil. This breathing pattern aims to reduce anxiety or help people get to sleep. There is limited scientific research to support this method, but there is a lot of anecdotal evidence to suggest that this type of deep, rythmic breathing is relaxing and may help ease people into sleep.\n\nDo it at least twice a day. You cannot do it too frequently. Do not it for more than 4 cycles at one time for the first month of practice. Later, if you wish, you can extend it to eight to ten cycles.\n\nPlease discontinue if you fell lightheaded."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <!-- Third TextView for "BENEFITS" with an arrow -->
+                    <LinearLayout
+                        android:id="@+id/layoutBenefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewBelow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="BENEFITS"
+                            android:textColor="@color/pomp_power"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <!-- ImageView for the arrow -->
+                        <ImageView
+                            android:id="@+id/arrowBenefits"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                    </LinearLayout>
+
+                    <!-- Content for "BENEFITS" -->
+                    <TextView
+                        android:id="@+id/textBenefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Here are some of the main benefits you can expect from consistently using 4-7-8 greathing:\n-An immediate sense of calm, for stress reduction.\n-Helps you fall asleep if done before bedtime.\n-Help with managing Anxiety.\n-Lower anxiety levels.\n-Can improve the symptoms of migraines and headaches."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <!-- Fourth TextView for "METHOD" with an arrow -->
+                    <LinearLayout
+                        android:id="@+id/layoutMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:text="METHOD"
+                            android:textColor="@color/pomp_power"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <!-- ImageView for the arrow -->
+                        <ImageView
+                            android:id="@+id/arrowMethod"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                    </LinearLayout>
+
+                    <!-- Content for "METHOD" -->
+                    <TextView
+                        android:id="@+id/textMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Altough you can do the exercise in any position, sit with your back straight while learning the exercise. Place the tip of your mouth against the ridge of tissue just behind your upper front teeth, and keep it there through the entire exercise. You will be exhaling through your mouth around your tongue.\n\nStep 1:\n\nClose your mouth and inhale through your nose to a mental state of four.\n\nStep 2:\n\nHold your breath for a count of seven.\n\nStep 3:\n\nExhale completely through your mouth, making a whoosh sound to a count of eight."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="40dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/mint_blue_green"
+                android:id="@+id/beginexercisebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/mint_green"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BEGIN EXERCISE"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/pomp_power"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

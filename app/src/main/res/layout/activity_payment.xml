@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/back"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    app:tint="@color/pomp_power" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/pomp_power"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:id="@+id/savedcardsection"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay with saved cards:"
+                    android:textSize="16sp"
+                    android:textColor="@color/pomp_power"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/savedcardslist"
+                    >
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/verdigris"
+                    android:text="Card number"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cardNumberInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    app:boxCollapsedPaddingTop="-0.3dp"
+                    android:theme="@style/MyTextInputLayout_overlay">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cardNumberEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Number"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:digits="0123456789 -"
+                        android:maxLines="1"
+                        android:maxLength="19" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expire Time"
+                    android:textColor="@color/verdigris"
+                    android:layout_marginTop="20dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/monthInputLayout"
+                        android:layout_marginRight="5dp"
+                        app:boxCollapsedPaddingTop="-0.3dp"
+                        android:layout_weight="1"
+                        android:theme="@style/MyTextInputLayout_overlay">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/monthEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Month"
+                            app:boxBackgroundColor="@android:color/transparent"
+                            android:background="@android:color/transparent"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="2" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/yearInputLayout"
+                        android:layout_marginLeft="5dp"
+                        app:boxCollapsedPaddingTop="-0.3dp"
+                        android:theme="@style/MyTextInputLayout_overlay">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/yearEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Year"
+                            app:boxBackgroundColor="@android:color/transparent"
+                            android:background="@android:color/transparent"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="4" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/verdigris"
+                    android:text="Card holder"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/cardnameInputLayout"
+                    app:boxCollapsedPaddingTop="-0.3dp"
+                    android:theme="@style/MyTextInputLayout_overlay">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cardnameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Name"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CVV"
+                    android:textColor="@color/verdigris"
+                    android:layout_marginTop="20dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/cvvInputLayout"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        app:boxCollapsedPaddingTop="-0.3dp"
+                        android:layout_weight="1"
+
+                        android:theme="@style/MyTextInputLayout_overlay">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/cvvEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter CVV"
+                            app:boxBackgroundColor="@android:color/transparent"
+                            android:background="@android:color/transparent"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="3" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="The last three digits on the back of yourcard"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/totalcharges"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:textSize="20dp"
+                    android:layout_gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnpay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background1"
+                    android:text="Pay Now"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

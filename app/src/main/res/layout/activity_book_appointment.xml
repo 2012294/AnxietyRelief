@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".BookAppointment">
+
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <!-- Add other views here -->
+        </LinearLayout>
+
+        <TextView
+        android:id="@+id/textView_therapist_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/pomp_power"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView_session_type_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of Session"
+        android:textSize="20sp"
+        android:textColor="@color/pomp_power"
+        android:textStyle="bold"
+        android:layout_below="@id/textView_therapist_username"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/VideoSessionCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_session_type_heading"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="6dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/textView_videosession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Session"
+            android:textSize="15sp"
+            android:textColor="@color/verdigris"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ChatSessionCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_session_type_heading"
+        android:layout_toEndOf="@id/VideoSessionCardView"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/textView_chatsession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat Session"
+            android:textSize="15sp"
+            android:textColor="@color/verdigris"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/SessionTypeInputLayout"
+            app:boxCollapsedPaddingTop="-0.3dp"
+            android:layout_weight="1"
+            android:layout_below="@id/VideoSessionCardView"
+            android:theme="@style/MyTextInputLayout_overlay">
+
+        </com.google.android.material.textfield.TextInputLayout>
+    <!-- Heading TextView -->
+    <TextView
+        android:id="@+id/textView_day_date_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/SessionTypeInputLayout"
+        android:text="Choose your day"
+        android:textColor="@color/pomp_power"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- New LinearLayout to vertically align heading and days layout -->
+    <LinearLayout
+        android:id="@+id/daylinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textView_day_date_heading"
+        android:background="@color/french_grey">
+
+
+        <TextView
+            android:id="@+id/monthTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_below="@id/textView_day_date_heading" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <!-- Add TextViews for each day of the week -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mon"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tue"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wed"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thu"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fri"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sat"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sun"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <!-- Add TextViews for remaining days of the week -->
+            <!-- Repeat for Tue, Wed, Thu, Fri, Sat -->
+
+        </LinearLayout>
+
+
+        <!-- GridView for calendar -->
+        <GridView
+            android:id="@+id/calendarGridView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/monthTextView"
+            android:numColumns="7"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:stretchMode="columnWidth"
+           />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/CalendarInputLayout"
+            app:boxCollapsedPaddingTop="-0.3dp"
+            android:layout_weight="1"
+            android:theme="@style/MyTextInputLayout_overlay">
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView_time_slots_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Slots"
+        android:textSize="20sp"
+        android:textColor="@color/pomp_power"
+        android:textStyle="bold"
+        android:layout_below="@id/daylinearlayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+        <TableLayout
+            android:id="@+id/availabilityTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_time_slots_heading"
+            android:stretchColumns="*"
+            android:padding="20dp">
+
+        </TableLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/TimeSlotInputLayout"
+            android:layout_below="@id/availabilityTableLayout"
+            app:boxCollapsedPaddingTop="-0.3dp"
+            android:layout_weight="1"
+            android:theme="@style/MyTextInputLayout_overlay">
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <Button
+                android:id="@+id/bookAppointmentButton"
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TimeSlotInputLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/french_grey"
+                android:text="Proceed to Payment" />
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+

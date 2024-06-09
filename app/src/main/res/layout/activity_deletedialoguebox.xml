@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+  >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="?attr/colorPrimary"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/baseline_warning_24"/>
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete My Account"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="1dp"
+
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+        <ImageView
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="end"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/baseline_cancel_24"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+
+
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to delete your account?"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Once your account is deleted, all of its
+resources and data will be permanently deleted.This action can not be undone"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/keepaccountbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keep account"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:padding="2dp"
+            android:background="@drawable/round_background1"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete account"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:background="@drawable/round_background"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

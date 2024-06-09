@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:scrollbars="none"
+      android:overScrollMode="never"
+      android:layout_height="match_parent"
+      >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:gravity="center"
+              android:background="@drawable/payment_top_background"
+              android:layout_height="170dp">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:text="Wellness Assessment"
+                  android:textColor="@color/white"
+                  android:textSize="30dp"
+                  android:textStyle="bold" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:text="Explore Your Emotions and Manage Anxiety"
+                  android:textColor="@color/white"
+                  android:textSize="15dp"
+                  android:textStyle="bold" />
+
+          </LinearLayout>
+          <androidx.cardview.widget.CardView
+              android:layout_marginTop="20dp"
+              android:layout_width="330dp"
+              android:layout_height="wrap_content"
+              app:cardElevation="25dp"
+              android:layout_gravity="center"
+              app:cardCornerRadius="20dp">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="20dp"
+                  android:orientation="vertical"
+                  >
+                  <TextView
+                      android:id="@+id/instructions"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Take your time with the questions, and remember, we're here for you. Your well-being is our priority."
+                      android:textSize="16sp"
+                      android:textColor="@color/black"
+                      />
+                  <TextView
+                      android:layout_marginTop="20dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="• The questionnaire consists of multiple-choice questions. For each question, choose the option that best reflects your feelings or thoughts."
+                      android:layout_marginStart="20dp"
+                      android:textSize="14sp"
+                      android:textColor="@color/black"/>
+                  <TextView
+                      android:layout_marginTop="15dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="• Answer each question honestly to get the most accurate insights and support."
+                      android:layout_marginStart="20dp"
+                      android:textSize="14sp"
+                      android:textColor="@color/black"/>
+                  <TextView
+                      android:layout_marginTop="15dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="• The goal is to complete the entire questionnaire without leaving in the middle. It's expected to take 5-7 minutes."
+                      android:layout_marginStart="20dp"
+                      android:textSize="14sp"
+                      android:textColor="@color/black"/>
+                  <TextView
+                      android:layout_marginTop="15dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="• Consider revisiting your responses over time to track your progress and evolving emotions."
+                      android:layout_marginStart="20dp"
+                      android:textSize="14sp"
+                      android:textColor="@color/black"/>
+                  <TextView
+                      android:layout_marginTop="15dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="• Your privacy is important. Rest assured that your responses are confidential and secure."
+                      android:layout_marginStart="20dp"
+                      android:textSize="14sp"
+                      android:textColor="@color/black"/>
+
+
+
+
+              </LinearLayout>
+
+
+          </androidx.cardview.widget.CardView>
+
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startAssessmentButton"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/round_background1"
+              android:layout_marginTop="16dp"
+              android:padding="15dp"
+              android:layout_gravity="center"
+              android:textColor="@color/white"
+              android:text="Begin Assessment"/>
+
+          <TextView
+              android:layout_marginTop="15dp"
+              android:layout_marginRight="15dp"
+              android:layout_width="wrap_content"
+              android:layout_marginBottom="20dp"
+              android:layout_height="wrap_content"
+              android:text="View Previous Results"
+              android:layout_gravity="end"
+              android:id="@+id/previousResultsOption"
+              android:background="@drawable/underlinepurple"
+              android:textSize="@dimen/text_size_medium"
+              android:textColor="@color/pomp_power"
+              />
+      </LinearLayout>
+  </ScrollView>
+
+
+
+</LinearLayout>

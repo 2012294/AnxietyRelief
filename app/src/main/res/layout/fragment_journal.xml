@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_ui.Journal.JournalFragment">
+
+    <!-- ... (existing layout code) -->
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/journalEntriesRecyclerView"
+        android:layout_marginTop="20dp"
+        android:padding="20dp">
+    </FrameLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/diary"
+        android:paddingStart="20dp"
+        app:tint="@color/verdigris" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="My Journal"
+        android:textSize="30sp"
+        android:textColor="@color/pomp_power"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/newentrybtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView"
+        android:layout_margin="20dp"
+        android:text="Add New Entry"
+        android:drawableRight="@drawable/baseline_add_24"
+        android:drawableTint="@color/white"
+
+        />
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newentrybtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Search..."
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/MyEntriesText"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchEditText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Journal Entries"
+        android:textSize="20sp"
+        android:textColor="@color/pomp_power"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/journalEntriesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyEntriesText"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Set the width and height of the cursor line -->
+    <size android:width="2dp" android:height="30dp" />
+    <!-- Set the color of the cursor -->
+    <solid android:color="@color/pomp_power" /> <!-- Change the color as needed -->
+</shape>

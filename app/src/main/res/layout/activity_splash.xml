@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"> <!-- Center all child views vertically and horizontally -->
+
+   <!-- Spacer view to push the TextView to the bottom -->
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1" />
+
+   <!-- Centered ImageView -->
+   <ImageView
+       android:layout_width="192dp"
+       android:layout_height="192dp"
+       android:src="@mipmap/ic_launcher_round" />
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1" />
+
+   <!-- TextView at the bottom with a margin -->
+   <TextView
+       android:id="@+id/myTextView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Anxiety Relief"
+       android:textSize="25sp"
+       android:textStyle="bold|italic"
+       android:gravity="center"
+       android:layout_marginBottom="40dp"
+       android:textColor="@color/pomp_power"/>
+</LinearLayout>

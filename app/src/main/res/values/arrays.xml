@@ -1,0 +1,135 @@
+<resources>
+    <string-array name="days_of_week">
+
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string-array name="days_of_week1">
+
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>ALL</item>
+    </string-array>
+
+    <string-array name="starttimings">
+
+        <item>12am</item>
+        <item>1am</item>
+        <item>2am</item>
+        <item>3am</item>
+        <item>4am</item>
+        <item>5am</item>
+        <item>6am</item>
+        <item>7am</item>
+        <item>8am</item>
+        <item>9am</item>
+        <item>10am</item>
+        <item>11am</item>
+        <item>12pm</item>
+        <item>1pm</item>
+        <item>2pm</item>
+        <item>3pm</item>
+        <item>4pm</item>
+        <item>5pm</item>
+        <item>6pm</item>
+        <item>7pm</item>
+        <item>8pm</item>
+        <item>9pm</item>
+        <item>10pm</item>
+        <item>11pm</item>
+    </string-array>
+
+    <string-array name="endtimings">
+
+        <item>12am</item>
+        <item>1am</item>
+        <item>2am</item>
+        <item>3am</item>
+        <item>4am</item>
+        <item>5am</item>
+        <item>6am</item>
+        <item>7am</item>
+        <item>8am</item>
+        <item>9am</item>
+        <item>10am</item>
+        <item>11am</item>
+        <item>12pm</item>
+        <item>1pm</item>
+        <item>2pm</item>
+        <item>3pm</item>
+        <item>4pm</item>
+        <item>5pm</item>
+        <item>6pm</item>
+        <item>7pm</item>
+        <item>8pm</item>
+        <item>9pm</item>
+        <item>10pm</item>
+        <item>11pm</item>
+    </string-array>
+    <string-array name="degrees_array">
+        <item>Ph.D. in Clinical Psychology</item>
+        <item>Psy.D. in Clinical Psychology</item>
+        <item>M.A. in Counseling Psychology</item>
+        <item>M.S.W. (Master of Social Work) with Clinical Specialization</item>
+        <item>M.A. in Clinical Mental Health Counseling</item>
+        <item>M.Ed. in Counseling</item>
+        <item>M.S. in Clinical Psychology</item>
+        <item>Doctor of Psychiatry (M.D.)</item>
+        <item>Doctor of Osteopathic Medicine (D.O.) with Psychiatry Residency</item>
+        <item>Doctor of Pharmacy (Pharm.D.) with Psychiatric Specialization</item>
+        <item>Psychiatric-Mental Health Nurse Practitioner (PMHNP)</item>
+        <item>Doctor of Occupational Therapy (OTD)</item>
+        <item>Doctor of Philosophy (Ph.D.) in Counseling Education and Supervision</item>
+        <item>Doctor of Marriage and Family Therapy (DMFT)</item>
+        <item>Master of Science in Nursing (MSN) with PMHNP Certification</item>
+        <item>Master of Public Health (MPH) with Mental Health Concentration</item>
+        <item>Master of Education (M.Ed.) in School Counseling</item>
+        <item>Master of Arts in Art Therapy</item>
+        <item>Master of Science in Occupational Therapy (MSOT)</item>
+        <item>Master of Science in Clinical Psychopharmacology</item>
+        <item>Master of Science in Nursing (MSN) with Psychiatric-Mental Health Nurse Practitioner (PMHNP) Certification</item>
+        <item>Other</item>
+
+    </string-array>
+
+
+
+        <string-array name="degree_array">
+            <item>Ph.D. in Clinical Psychology</item>
+            <item>Psy.D. in Clinical Psychology</item>
+            <item>M.A. in Counseling Psychology</item>
+            <item>M.S.W. (Master of Social Work) with Clinical Specialization</item>
+            <item>M.A. in Clinical Mental Health Counseling</item>
+            <item>M.Ed. in Counseling</item>
+            <item>M.S. in Clinical Psychology</item>
+            <item>Doctor of Psychiatry (M.D.)</item>
+            <item>Doctor of Osteopathic Medicine (D.O.) with Psychiatry Residency</item>
+            <item>Doctor of Pharmacy (Pharm.D.) with Psychiatric Specialization</item>
+            <item>Psychiatric-Mental Health Nurse Practitioner (PMHNP)</item>
+            <item>Doctor of Occupational Therapy (OTD)</item>
+            <item>Doctor of Philosophy (Ph.D.) in Counseling Education and Supervision</item>
+            <item>Doctor of Marriage and Family Therapy (DMFT)</item>
+            <item>Master of Science in Nursing (MSN) with PMHNP Certification</item>
+            <item>Master of Public Health (MPH) with Mental Health Concentration</item>
+            <item>Master of Education (M.Ed.) in School Counseling</item>
+            <item>Master of Arts in Art Therapy</item>
+            <item>Master of Science in Occupational Therapy (MSOT)</item>
+            <item>Master of Science in Clinical Psychopharmacology</item>
+            <item>Master of Science in Nursing (MSN) with Psychiatric-Mental Health Nurse Practitioner (PMHNP) Certification</item>
+            <item>ALL</item>
+        </string-array>
+
+
+
+
+</resources>

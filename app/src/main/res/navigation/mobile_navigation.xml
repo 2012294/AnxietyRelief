@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.hareem.anxietyrelief.Patient_ui.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_patient_home">
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_journal"
+            app:destination="@id/nav_journal" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_anxiety_level"
+            app:destination="@id/nav_anxiety_level" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_affirmation"
+            app:destination="@id/nav_affirmation" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_breathingexercise"
+            app:destination="@id/nav_exercise" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_FindTherapist"
+            app:destination="@id/nav_find_therapist" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_affirmation"
+        android:name="com.hareem.anxietyrelief.Patient_ui.Affirmation.AffirmationFragment"
+        tools:layout="@layout/fragment_affirmation" />
+
+    <fragment
+        android:id="@+id/nav_journal"
+        android:name="com.hareem.anxietyrelief.Patient_ui.Journal.JournalFragment"
+        tools:layout="@layout/fragment_journal" />
+
+    <fragment
+        android:id="@+id/nav_anxiety_level"
+        android:name="com.hareem.anxietyrelief.Patient_ui.AnxietyLevel.AnxietyLevelFragment"
+        android:label=""
+        tools:layout="@layout/fragment_anxiety_level" />
+    <fragment
+        android:id="@+id/nav_exercise"
+        android:name="com.hareem.anxietyrelief.Patient_ui.breathingexercise.BreathingExerciseFragment"
+        android:label=""
+        tools:layout="@layout/fragment_breathing_exercise" />
+    <fragment
+        android:id="@+id/nav_find_therapist"
+        android:name="com.hareem.anxietyrelief.Patient_ui.FindTherapist.FindTherapist"
+        android:label=""
+        tools:layout="@layout/fragment_find_therapist" />
+
+
+
+</navigation>
+

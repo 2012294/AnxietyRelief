@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientRegister">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/wave__6_" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/wave__5_"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_large">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_weight="700"
+            android:textStyle="bold"
+            android:textColor="@color/pomp_power"
+            android:textSize="@dimen/font_size_xlarge" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:theme="@style/MyTextInputLayout_overlay"
+            app:boxCollapsedPaddingTop="-1dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText1"
+                android:layout_width="match_parent"
+                android:textCursorDrawable="@null"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Email"
+                android:maxLines="1"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content"
+            app:passwordToggleDrawable="@drawable/password_toggle_selector"
+            android:layout_marginTop="10dp"
+            app:boxCollapsedPaddingTop="-1dp"
+            android:theme="@style/MyTextInputLayout_overlay"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:boxBackgroundColor="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/white"
+                android:inputType="textPassword"
+                android:hint="Enter Password"
+                android:maxLines="1"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_background1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:text="Log in"/>
+        <TextView
+            android:id="@+id/linkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="end"
+
+            android:textSize="@dimen/text_size_medium"
+
+            android:textColor="@color/pomp_power"
+            android:clickable="true"
+            android:onClick="login" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loginProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+
+        android:visibility="invisible" />
+</RelativeLayout>
